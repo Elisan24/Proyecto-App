@@ -6,5 +6,11 @@ use Illuminate\Http\Request;
 
 class PropertyController extends Controller
 {
-    //
+    public function index(){
+        return "hola mundo";
+    }
+
+    public function quienes(){
+        return view('Bienevenidos');
+    }
 }
