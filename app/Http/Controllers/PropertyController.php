@@ -10,7 +10,7 @@ class PropertyController extends Controller
         return "hola mundo";
     }
 
-    public function quienes(){
+    public function create(){
         return view('Bienevenidos');
     }
 }
