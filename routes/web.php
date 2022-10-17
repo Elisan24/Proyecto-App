@@ -1,18 +1,20 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PropertyController;
+use App\Http\Controllers\CommentController;
+use App\Http\Controllers\GuestController;
+use App\Http\Controllers\OwnerController;
+use App\Http\Controllers\RestrictionController;
+use App\Http\Controllers\ServiceController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+Route::get('/', function () { return view('welcome');});
+Route::get('Property', 'App\Http\Controllers\PropertyController@index');
+Route::get('Property', 'App\Http\Controllers\CommentController@index');
+Route::get('Property', 'App\Http\Controllers\GuestController@index');
+Route::get('Property', 'App\Http\Controllers\OwnerController@index');
+Route::get('Property', 'App\Http\Controllers\RestrictionController@index');
+Route::get('Property', 'App\Http\Controllers\ServiceController@index');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
