@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class LeaseController extends Controller
+class OwnerController extends Controller
 {
     public function index(){
-        return "hola mundo";
+        return "Ya jaloooooo propietario";
     }
 
     public function create(){

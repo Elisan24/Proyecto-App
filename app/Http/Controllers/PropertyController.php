@@ -7,9 +7,8 @@ use Illuminate\Http\Request;
 class PropertyController extends Controller
 {
     public function index(){
-        return "hola mundo";
+        return "Ya jaloooooo propiedad";
     }
-
     public function create(){
         return view('welcome');
     }
